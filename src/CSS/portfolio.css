@@ -1,0 +1,9 @@
+#flexPage {
+    display:flex;
+    flex-direction:column;
+    padding:0.5rem;
+}
+
+h2 {
+    margin-block-start:1.5em;
+}

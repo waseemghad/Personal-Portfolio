@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="JS/register.js" defer></script>
+    <title>Register for My Blog</title>
+</head>
+<body id="fullFlex">
+    <div id="headgrid">
+        <header>
+            <h1>Waseem Ghadari</h1> 
+        </header>
+
+        <nav id="nav_id">
+            <ul id="navlist">
+                <li><a href="index.html">About Myself</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="viewBlog.php">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <h1>Register</h1>
+        <p>Create an account to access my blog.</p>
+        <article id="flexPage">
+            <form method="post" action="register.php">
+                <fieldset>
+                    <label>First Name</label>
+                    <input type="text" name="fName" required>
+                    <label>Last Name</label>
+                    <input type="text" name="lName" required>
+                    <label>Email Adress</label>
+                    <input type="email" name="email" required>
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                    <label>Confirm Password</label>
+                    <input type="password" name="confPassword" required>
+                    <input type="submit" value="Create">
+                </fieldset>
+            </form>
+        </article>
+    </main>
+    
+    <footer id="footerFlex">
+        <p>Waseem Hemat Ghadari</p>
+        <div id="iconsDiv">
+            <a href="https://www.github.com/waseemghad">
+                <img class="icons" src="PNGimage/github_red.png" alt="my GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/waseem-hemat-ghadari-518747372/">
+                <img class="icons" src="PNGimage/linkedin_red.png" alt="my Linkedin">
+            </a>
+        </div>
+        <p>Updated on 4 May 2026</p>
+    </footer>
+</body>
+</html>

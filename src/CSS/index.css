@@ -1,0 +1,63 @@
+
+
+#section1 {
+    grid-area:section;
+}
+
+#hobbies {
+    grid-area:hobbies;
+}
+
+h3 {
+    text-decoration:underline;
+}
+
+h2 {
+    padding-inline:1rem;
+    text-decoration:none;
+}
+
+#interior {    
+    grid-area:interior;
+}
+
+#inter {
+    display: flex;
+    flex-direction:row;
+}
+
+article {
+    padding-inline:1rem;
+}
+
+#main_grid {
+    display:grid;
+    grid-template-areas:
+        'hobbies interior interior interior interior'
+        'section interior interior interior interior';
+    grid-template-columns: repeat(5, 1fr);
+    gap:0.5rem;
+}
+
+#image1 {
+    width:500px;
+}
+
+/* Media query for screens 768px and below (mobile) */
+@media (max-width: 768px) {
+    #main_grid {
+        grid-template-areas:
+            'interior'
+            'hobbies'
+            'section';
+        grid-template-columns: 1fr;
+    }
+    
+    #inter {
+        flex-direction: column;
+    }
+    
+    #image1 {
+        width: 100%;
+    }
+}

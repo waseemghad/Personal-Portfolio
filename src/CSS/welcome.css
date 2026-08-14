@@ -1,0 +1,66 @@
+#hlo {
+    font-size: 85pt;
+    font-weight: 200;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.2em;
+}
+
+legend {
+    padding-inline: 0.3rem;
+}
+
+form {
+    margin-block-start:3rem;
+}
+
+fieldset {
+    padding:2rem;
+    width:20em;
+    height:8em;
+    margin: 0 auto; /* to centre align whole field */
+    text-align: center; /* text align because it is a block element*/
+    border-radius: 8px; /* round edges */
+    padding-top: 4.5em;
+    padding-bottom: 3em;
+    padding-inline: 3.5em;
+    border: solid 2px aliceblue;
+    border-radius: 20px;
+}
+
+label {
+    margin:1.5em; /* space between it and input */
+}
+
+input[type="submit"] {
+    background-color: #282828;
+    border: solid 1px #ff0033;
+    color: aliceblue;
+    border-radius: 8px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-inline: 1em;
+    font-weight: bold;
+}
+
+legend {
+    text-align: center;
+}
+
+main {
+    padding:5rem
+}
+
+.fieldsDiv {
+    padding:0.5rem;
+    background-color:black;
+    border-radius: 1rem;
+    border: solid 1px white;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+}
+
+#navlist {
+    margin-block:2.5rem;
+}

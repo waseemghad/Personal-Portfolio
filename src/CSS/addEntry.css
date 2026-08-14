@@ -1,0 +1,101 @@
+form {
+    width: min(92vw, 1400px);       /* Takes the smaller value of the two. */
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #ff0033;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: rgba(26, 26, 26, 0.8);
+}
+
+legend {
+    color: #ff0033;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: lightgoldenrodyellow;
+    font-weight: 500;
+}
+
+#titleDiv, #blogDiv {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+}
+
+input#title,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2a2a2a;
+    color: aliceblue;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;     /* makes an element's dexlared width & height include the border and padding */
+    transition: border-color 0.3s ease;
+}
+
+input#title:focus,
+textarea:focus {    /* Appearance when clicked on */
+    outline: none;
+    border-color: #ff0033;
+    box-shadow: 0 0 8px rgba(255, 0, 51, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.5;
+}
+
+aside {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 3rem;
+}
+
+#user {
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    gap:0.5rem;
+}
+
+.buttonClass {
+    height:100%;
+    margin-left: 2rem;
+    align-items: center;
+}
+
+/* Media query for screens 768px and below (mobile) */
+@media (max-width: 768px) {
+    aside {
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-top:1rem;
+        gap: 1rem;
+    }
+    
+    section {
+        flex-direction: column;
+    }
+    
+    .buttonClass {
+        margin-left: 0;
+        width: 20%;
+    }
+}

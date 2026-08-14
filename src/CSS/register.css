@@ -1,0 +1,97 @@
+main {
+	padding: 3.5rem 5rem;
+}
+
+main h1 {
+	margin-bottom: 0.35rem;
+}
+
+main p {
+	margin-bottom: 1.5rem;
+}
+
+form {
+	width: min(92vw, 34rem);
+	margin: 0 auto 2rem;
+}
+
+fieldset {
+	border: 2px solid #ff0033;
+	border-radius: 12px;
+	padding: 3rem;
+	background-color: rgba(26, 26, 26, 0.8);
+}
+
+label {
+	display: block;
+	margin-top: 1rem;
+	margin-bottom: 0.45rem;
+	color: lightgoldenrodyellow;
+	font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="confPassword"] {
+	width: 100%;
+	padding: 0.7rem;
+	background-color: #2a2a2a;
+	color: aliceblue;
+	border: 1px solid #444;
+	border-radius: 6px;
+	font-family: "Epilogue", sans-serif;
+	font-size: 1rem;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="confPassword"]:focus {
+	outline: none;
+	border-color: #ff0033;
+	box-shadow: 0 0 8px rgba(255, 0, 51, 0.3);
+}
+
+button,
+input[type="submit"] {
+	min-width: 130px;
+	display: block;
+	margin-top: 1.3rem;
+	margin-inline: auto;
+	padding: 0.7rem 1.4rem;
+	border: 1px solid #ff0033;
+	border-radius: 6px;
+	background-color: transparent;
+	color: aliceblue;
+	font-family: "Epilogue", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+	background-color: #ff0033;
+	color: #1a1a1a;
+}
+
+button:active,
+input[type="submit"]:active {
+	transform: translateY(1px);
+}
+
+button:focus-visible,
+input[type="submit"]:focus-visible {
+	outline: 2px solid #ff0033;
+	outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+	main {
+		padding: 2.2rem 1.1rem;
+	}
+}

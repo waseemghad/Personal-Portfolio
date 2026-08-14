@@ -1,0 +1,110 @@
+#hlo {
+    font-size: 85pt;
+    font-weight: 200;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.2em;
+}
+
+legend {
+    padding-inline: 0.3rem;
+}
+
+form {
+    margin-block-start: 2.5rem;
+}
+
+fieldset {
+    width: min(90vw, 28rem);
+    min-height: 8em;
+    height: auto;
+    margin: 0 auto; /* to centre align whole field */
+    text-align: center; /* text align because it is a block element*/
+    border-radius: 8px; /* round edges */
+    padding-top: 2.6em;
+    padding-bottom: 2.2em;
+    padding-inline: 2.2em;
+    border: solid 2px #ff0033;
+    border-radius: 20px;
+    background-color: rgba(26,26,26,0.8);
+}
+
+label {
+    margin: 0;
+    min-width: 5.5rem;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid #8a8a8a;
+    border-radius: 6px;
+    background-color: #1e1e1e;
+    color: aliceblue;
+    font-family: "Epilogue", sans-serif;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #ff0033;
+    box-shadow: 0 0 0 3px rgba(255, 0, 51, 0.2);
+}
+
+input[type="submit"] {
+    background-color: #282828;
+    border: solid 1px #ff0033;
+    color: aliceblue;
+    border-radius: 8px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-inline: 2em;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+legend {
+    text-align: center;
+    color:#ff0033;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding:0 0.5rem;
+}
+
+main {
+    padding: 4rem 5rem;
+}
+
+.fieldsDiv {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    background-color:transparent;
+    border-radius: 1rem;
+    border: solid 0.5px aliceblue;
+}
+
+.registerBtn {
+    background-color: #282828;
+    border: solid 1px #ff0033;
+    color: aliceblue;
+    border-radius: 8px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-inline: 2em;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+aside {
+    font-size:0.75rem;
+    font-weight:600;
+    color:#ff0033;
+    font-family: "Epilogue", sans-serif;
+    padding-top:1rem;
+}

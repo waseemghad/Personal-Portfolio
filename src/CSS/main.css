@@ -1,0 +1,184 @@
+html {
+    background-color: #1a1a1a;
+    color:aliceblue;
+    font-size:12pt; /* for reference (rem) */
+}
+
+h1, h2, h3, p, label, section, legend, figcaption {
+    font-family:"Epilogue", sans-serif;
+    font-weight:400;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    color:#ff0033;
+}
+
+h2 {
+    color:#ff0033;
+    text-decoration:underline;
+}
+
+figcaption {
+    text-align:center;
+    font-weight:200;
+    font-size:0.8rem;
+}
+
+header h1 {
+    font-weight:200;
+    font-size:44pt;
+    margin-block-start:0rem;
+    margin-block-end:0rem;      /* space above and below text */
+}
+
+header {
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top:2.3rem;
+    padding-bottom:0.6rem;
+    color:#ff0033;
+}
+
+body {
+    margin:0; /* otherwise there's space around the page */
+    background-image: url(../PNGimage/bg.png); /* Designed by starline / Freepik */
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex; /* to ensure that body tag extends to fill the page */
+    flex-direction: column;
+    min-height: 100vh; /* fill the viewport */
+}
+
+main {
+    padding:1rem;
+}
+
+#fullFlex {
+    display:flex;
+    flex-direction:column;
+    min-height:100vh; /* full veiwport, to put header and footer in place */
+    width:100%;
+}
+
+#headgrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+#nav_id {
+    align-content:center; /* to put links vertically in the middle */
+}
+
+#navlist {
+    list-style: none; /* to remove the bullet points */
+    display:flex;
+    flex-direction:row;
+    gap:1.5rem;
+}
+
+#navlist a {
+    font-size:1.25rem;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+a {
+    color: lightgoldenrodyellow;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+footer {
+    margin-top:auto;    /* to force footer to bottom */
+    background-color:#1a1a1a;
+    color:#ff0033;
+    height: 3rem;
+    padding:0.5rem;
+}
+
+#footerFlex {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between; /* horizontal for flex/grid */
+}
+
+img {
+    border: solid 2px #282828;
+    border-radius: 4px;
+}
+
+#iconsDiv {
+    display:flex;
+    justify-content: center; /* horizontal for flex/grid */
+    align-items: center; /* vertical for flex/grid */
+    gap:0.5rem;
+}
+
+.icons {
+    border: solid 0px black; /* otherwise grey image border applies */
+    width:2rem;
+    height:2rem;
+}
+
+/* Media query for screens 768px and below (mobile) */
+@media (max-width: 768px) {
+    #headgrid {
+        grid-template-columns: 1fr; /* Stack header and nav vertically */
+    }
+    
+    header h1 {
+        font-size: 28pt; /* Reduce header size for mobile */
+    }
+    
+    #navlist {
+        gap: 0.75rem; /* Reduce gap between items */
+        padding: 0;
+    }
+    
+    #navlist a {
+        font-size: 1rem; /* Smaller nav links on mobile */
+    }
+    
+    #nav_id {
+        align-content: flex-start;
+        padding-left: 2rem;
+    }
+}
+
+#buttons {
+    display:flex;
+    gap:2rem;
+    margin-top: 1rem;
+    justify-content: end;
+}
+
+#buttons button, #buttons a button, .buttonClass {
+    min-width: 130px;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid #ff0033;
+    border-radius: 6px;
+    background-color: transparent;
+    color: aliceblue;
+    font-family: "Epilogue", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#buttons button:hover, .buttonClass:hover{
+    background-color: #ff0033;
+    color: #1a1a1a;
+}
+
+#buttons button:active, .buttonClass:active {   /* moves down when clicked */
+    transform: translateY(1px);
+}
+
+#buttons button:focus-visible, .buttonClass:focus-visible {     /* when selected by tab */
+    outline: 2px solid #ff0033;
+    outline-offset: 2px;
+}

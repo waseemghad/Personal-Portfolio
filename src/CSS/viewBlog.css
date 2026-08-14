@@ -1,0 +1,150 @@
+#flexPage {
+    display:flex;
+    flex-direction:column;
+    padding:0.5rem;
+}
+
+h2 {
+    margin-block-start:1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#toolbarWrap {
+    display:flex;
+    justify-content: space-between;
+}
+
+#buttons { /* overwrites main CSS */
+    justify-content: space-between;
+}
+
+#buttons a button { /* overwrites main CSS */
+    background-color: black;
+    height: 4rem;
+}
+
+#previewMsg {
+    font-weight:600;
+    color:lightgoldenrodyellow;
+    text-align: center;
+}
+
+#postInfo {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#commBtn {
+    color:lightgoldenrodyellow;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight:600;
+    border:0px;
+    border-radius: 6px;
+    height:1.5rem;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#commBtn:hover {
+    color:#ff0033;
+}
+
+#commBtn:active {   /* moves down when clicked */
+    transform: translateY(1px);
+}
+
+#commBtn:focus-visible {     /* when selected by tab */
+    outline: 2px solid #ff0033;
+    outline-offset: 2px;
+}
+
+textarea {
+    padding: 0.75rem;
+    background-color: #2a2a2a;
+    color: aliceblue;
+    border: 1px solid #444;
+    border-radius: 4px;
+    width: 85%;
+    min-width: 40%;
+    max-width: 85%;
+    min-height: 4rem;
+    max-height: 20rem;
+    font-family: "Epilogue", sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    flex-shrink: 0; /* prevents the flex container from shrinking */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ff0033;
+    box-shadow: 0 0 8px rgba(255, 0, 51, 0.3);
+}
+
+textarea::placeholder {
+    color: #777;
+    opacity: 0.8;
+}
+
+#commBox {
+    display:flex;
+    align-items:start;
+    gap:2rem;
+    padding-inline: 2rem;
+}
+
+.commentsDisplay {
+    padding-inline:2rem;
+}
+
+.comment {
+    margin-bottom:3rem;
+}
+
+.comment p { /* displays \n as an actual newline/enter (for comments) */
+    white-space: pre-line;  /* Preserves line breaks in comment text */
+}*/
+
+#topRowBtns {
+    display:flex;
+    flex-direction: row;
+    gap:2rem;
+    margin-right: 2.5%;
+}
+
+/* Media query for screens 768px and below (mobile) */
+@media (max-width: 768px) {
+    #commBox {
+        flex-direction: column; /* Stack comment form vertically */
+        align-items: stretch; /* Make items full width */
+        gap: 1rem; /* Reduce gap */
+        padding-inline: 0.5rem; /* Reduce padding on sides */
+    }
+    
+    textarea {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    #topRowBtns {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 0.5rem;
+        margin-right: 0;
+    }
+    
+    #buttons a button {
+        height: 2.5rem; /* Smaller buttons on mobile */
+    }
+    
+    .commentsDisplay {
+        padding-inline: 0.5rem; /* Reduce padding */
+    }
+}

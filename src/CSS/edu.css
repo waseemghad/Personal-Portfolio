@@ -1,0 +1,9 @@
+#flexPage {
+    display:flex;
+    flex-direction:column;
+    padding:0.5rem;
+}
+
+.largeFontP {
+    font-size: 14pt; /* to show the course clearer */
+}
