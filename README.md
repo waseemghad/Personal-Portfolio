@@ -4,7 +4,7 @@ A personal blog/portfolio site built with PHP and MySQL, featuring user sessions
 
 **Version:** 1.0
 
-**Live demo:** https://wghad.byethost7.com/index.html
+**Live demo:** https://wghad.byethost7.com
 
 ## Tech Stack
 
