@@ -196,7 +196,7 @@ $preview = $_SESSION['preview'] ?? FALSE;
                 <img class="icons" src="PNGimage/linkedin_red.png" alt="my Linkedin">
             </a>
         </div>
-        <p>Updated on 4 May 2026</p>
+        <p>Updated on 28 Sep 2026</p>
     </footer>
 </body>
 </html>
