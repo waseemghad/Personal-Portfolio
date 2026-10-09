@@ -14,8 +14,8 @@
 
 <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $email = $_POST['email'];
-        $pass = $_POST['password'];
+        $email = $_POST['email'] ?? '';
+        $pass = $_POST['password'] ?? '';
                                                     // WHERE statement checks if email exisits in database
         $sql = "SELECT email, password, ID, first_name, last_name FROM USERS WHERE email = '$email' ";    // returns only one row with a given email
         $result = $conn->query($sql);   // execute the SQL query and store result (the retrieved data)
@@ -23,7 +23,7 @@
         if ($result->num_rows > 0) { // if a row was found
             $row = $result->fetch_assoc();  //fetch data from the row
 
-            if ($row['password'] == $pass) {
+            if ($password_verify($pass, $row['password'])) {        // verifies if the password (after hashing it) matches with stored hashed one
 
                 session_start();        // instructed to start a session upon correct login.
 

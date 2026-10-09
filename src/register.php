@@ -29,9 +29,15 @@
     $lname = $_POST['lName'];
     $email = $_POST['email'];
     $pass = $_POST['password'];
+
+    $hashed_pass = password_hash($pass, PASSWORD_DEFAULT);  // hashes the password for user security
+    if ($hashed_pass === false) {
+        exit('unable to securely create password');
+    }
+
                                                                     //'USERS' is the table within the satabase
     $sql = "INSERT INTO USERS (first_name, last_name, email, password)
-     VALUES ('$fname', '$lname', '$email', '$pass')";               // $sql string created with SQL functions
+     VALUES ('$fname', '$lname', '$email', '$hashed_pass')";               // $sql string created with SQL functions
     
         // string is sent over to the database in if statement
     if ($conn->query($sql) === TRUE) {       // if successful registry
